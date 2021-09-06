@@ -1,0 +1,17 @@
+﻿@*@model List<WebApplication2.Models.Product>
+
+    <ul>
+        @foreach (var product in Model)
+        {
+            <li>@product.Name</li>
+
+        }
+    </ul>*@
+
+<ul>
+    @foreach (var product in ViewBag.products as List<WebApplication2.Models.Product>)
+    {
+        <li>@product.Name</li>
+
+    }
+</ul>
